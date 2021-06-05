@@ -25,7 +25,8 @@
 </head>
 <body>
  <h1>TABEL DOKTER</h1>
-    
+    <input name="search" type="text">
+    <button type="submit">Search</button>
     <table>
         <thead>
             <tr>

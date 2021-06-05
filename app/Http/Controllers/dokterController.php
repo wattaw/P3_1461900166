@@ -11,11 +11,12 @@ class dokterController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+ 
+    public function index(Request $request)
     {
         //
         $dokter = Dokter::all();
-        return view('dokter_0166', ['dokter_0166_data' => $dokter]);
+        return view('dokter_0166', ['dokter_0166_data' => $dokter,'iddokter'=>$request]);
     }
 
     /**
