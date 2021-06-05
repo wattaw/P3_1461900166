@@ -46,7 +46,7 @@
                 <td>Dino , Joko</td>
                 <td>
                    <a href="/dokter/{{$dtr->id}}/edit">Edit</a>
-                    <form action="{{url('dokter/'.$dtr->id)}}" method="post">
+                    <form action="{{('dokter/'.$dtr->id)}}" method="post">
                     @csrf
                     <input type="hidden" name="_method" value="delete">
                     <button type="submit">Delete</button>
